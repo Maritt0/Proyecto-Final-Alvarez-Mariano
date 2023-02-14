@@ -1,0 +1,32 @@
+> .containercards1, .containercards2
+            {
+                .cardinicio:hover
+                {
+                    transform: scale(1.28);
+                    transition: 0.5s;
+                }
+                > #cardssection
+                {
+                    display: flex;
+                    justify-content: center;
+                    margin: auto;
+
+                    > .cardinicio
+                    {
+                        padding:5vh;
+                        > .Cardinicio-info
+                        {  
+                            background-color: aqua;
+                            width:auto;
+                            margin: auto;
+                            text-align: center;
+                            > h2
+                            {
+                                margin: auto;
+                                font-size: 20px;
+                                font-weight: 700;
+                            }     
+                        }
+                    }    
+                }   
+            } 
