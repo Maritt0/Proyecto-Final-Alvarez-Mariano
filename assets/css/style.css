@@ -74,7 +74,7 @@ body#Inicio > .flexinicio > .containercards1 .cardinicio:hover, body#Inicio > .f
   transition: 0.5s;
 }
 body#Inicio > .flexinicio > .containercards1 > #cardssection, body#Inicio > .flexinicio .containercards2 > #cardssection {
-  display: flex;
+  display: flex!important;
   justify-content: center;
   margin: auto;
 }
