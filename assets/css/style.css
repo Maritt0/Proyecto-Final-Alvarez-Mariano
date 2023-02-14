@@ -74,7 +74,7 @@ body#Inicio > .flexinicio > .containercards1 .cardinicio:hover, body#Inicio > .f
   transition: 0.5s;
 }
 body#Inicio > .flexinicio > .containercards1 > #cardssection, body#Inicio > .flexinicio .containercards2 > #cardssection {
-  display: flex!important;
+  display: flex;
   justify-content: center;
   margin: auto;
 }
@@ -317,6 +317,8 @@ body#SN > .flexsobrenosotros > .PositionTextSN {
   margin: 60px;
   border: 10px solid rgb(0, 0, 0);
   background-color: whitesmoke;
+  width: auto;
+  height: auto;
 }
 body#SN > .flexsobrenosotros > .PositionTextSN > div > p {
   font-size: 20px;
@@ -617,7 +619,7 @@ body#Contactarse > .flexcontactarse .PosicionPContacto > .textcontactarse {
     font-weight: 700;
   }
   .cardproductos img {
-    width: 39.1vh;
+    width: 33vh;
     height: 20vh;
   }
   .cardsproductos {
