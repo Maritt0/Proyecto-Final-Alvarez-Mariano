@@ -2,56 +2,31 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Franklin Gothic Medium", !important;
+}
+
+body {
+  font-family: "Franklin Gothic Medium";
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body#Inicio {
-  background: url(/Assets/Img/shutterstock_1049919614.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-image: url(/Assets/Img/shutterstock_1049919614.jpg);
 }
 body#Inicio footer {
-  border: 4px solid lightcoral;
+  border: 10px solid lightcoral;
   background-color: lightcoral;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: black;
   text-align: center;
 }
 body#Inicio footer > a {
   text-decoration: none;
 }
-body#Inicio footer > a > .mail {
-  position: relative;
+body#Inicio > .flexinicio {
+  display: flex;
+  flex-direction: column;
   margin: auto;
-  width: auto;
 }
-body#Inicio footer > a > .IG {
-  position: relative;
-  margin: auto;
-  width: auto;
-}
-body#Inicio footer > a > .WSP {
-  position: relative;
-  margin: auto;
-  width: auto;
-}
-body#Inicio footer > a > .fd {
-  position: relative;
-  margin: auto;
-  width: auto;
-}
-body#Inicio > .gridinicio {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 10vh 40vh 35vh;
-  grid-gap: 1vh;
-}
-body#Inicio > .gridinicio > .navbar {
+body#Inicio > .flexinicio > .navbar {
   background-color: burlywood;
   display: flex;
   width: auto;
@@ -59,13 +34,13 @@ body#Inicio > .gridinicio > .navbar {
   justify-content: end;
   font-style: none;
 }
-body#Inicio > .gridinicio > .navbar > ul {
+body#Inicio > .flexinicio > .navbar > ul {
   list-style-type: none;
   display: flex;
   margin: 0;
   padding: 0;
 }
-body#Inicio > .gridinicio > .navbar > ul > li > a {
+body#Inicio > .flexinicio > .navbar > ul > li > a {
   display: flex;
   text-decoration: none;
   color: black;
@@ -73,64 +48,46 @@ body#Inicio > .gridinicio > .navbar > ul > li > a {
   padding: 13px;
   margin: 0%;
 }
-body#Inicio > .gridinicio > .navbar > ul > li > a:hover {
+body#Inicio > .flexinicio > .navbar > ul > li > a:hover {
   background: orangered;
   color: white;
 }
-body#Inicio > .gridinicio > .hamnav {
-  width: 100%;
-  height: 38%;
-  background: burlywood;
+body#Inicio > .flexinicio > .hamnav {
   display: none;
 }
-body#Inicio > .gridinicio > .hamnav > .hamburger {
-  position: fixed;
-  top: 17px;
-  left: 12px;
-  opacity: 0%;
-}
-body#Inicio > .gridinicio > .hamnav > .hamburger > .hamitems {
-  display: flex;
-}
-body#Inicio > .gridinicio > .hamnav > .hamburger > .hamitems > a {
-  flex-grow: 1;
-  flex-basis: 0;
-  padding: 10px;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-}
-body#Inicio > .gridinicio > .hamnav > .hamburger > .hamitems a:hover {
-  background: #af0d0d;
-}
-body#Inicio > .gridinicio > .PosicionInicio {
+body#Inicio > .flexinicio > .PosicionInicio {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 5.2vh;
 }
-body#Inicio > .gridinicio > .PosicionInicio > #TitleInicio {
+body#Inicio > .flexinicio > .PosicionInicio > #TitleInicio {
   border-style: ridge;
   width: fit-content;
   background-color: rgb(165, 106, 28);
   border-radius: 15px;
   border-width: 20px;
 }
-body#Inicio > .gridinicio > .containercards > #cardssection {
+body#Inicio > .flexinicio > .containercards1 .cardinicio:hover, body#Inicio > .flexinicio .containercards2 .cardinicio:hover {
+  transform: scale(1.28);
+  transition: 0.5s;
+}
+body#Inicio > .flexinicio > .containercards1 > #cardssection, body#Inicio > .flexinicio .containercards2 > #cardssection {
   display: flex;
   justify-content: center;
   margin: auto;
 }
-body#Inicio > .gridinicio > .containercards > #cardssection > .cardinicio {
-  padding: 10px;
+body#Inicio > .flexinicio > .containercards1 > #cardssection > .cardinicio, body#Inicio > .flexinicio .containercards2 > #cardssection > .cardinicio {
+  padding: 5vh;
 }
-body#Inicio > .gridinicio > .containercards > #cardssection > .cardinicio > .Cardinicio-info {
+body#Inicio > .flexinicio > .containercards1 > #cardssection > .cardinicio > .Cardinicio-info, body#Inicio > .flexinicio .containercards2 > #cardssection > .cardinicio > .Cardinicio-info {
   background-color: aqua;
   width: auto;
   margin: auto;
   text-align: center;
 }
-body#Inicio > .gridinicio > .containercards > #cardssection > .cardinicio > .Cardinicio-info > h2 {
+body#Inicio > .flexinicio > .containercards1 > #cardssection > .cardinicio > .Cardinicio-info > h2, body#Inicio > .flexinicio .containercards2 > #cardssection > .cardinicio > .Cardinicio-info > h2 {
   margin: auto;
   font-size: 20px;
   font-weight: 700;
@@ -138,51 +95,20 @@ body#Inicio > .gridinicio > .containercards > #cardssection > .cardinicio > .Car
 
 body#Productos {
   background-image: url(/Assets/Img/colorful-ice-cream-seamless-pattern-background-for-poster-print-cards-wrapping-paper-clothes-decoration-and-ice-cream-shop-vector.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 body#Productos footer {
-  border: 4px solid lightcoral;
+  border: 10px solid lightcoral;
   background-color: lightcoral;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: black;
   text-align: center;
 }
 body#Productos footer > a {
   text-decoration: none;
 }
-body#Productos footer > a > .mail {
-  position: relative;
-  margin: auto;
-  width: auto;
+body#Productos > .flexproductos {
+  display: flex;
+  flex-direction: column;
 }
-body#Productos footer > a > .IG {
-  position: relative;
-  margin: auto;
-  width: auto;
-}
-body#Productos footer > a > .WSP {
-  position: relative;
-  margin: auto;
-  width: auto;
-}
-body#Productos footer > a > .fd {
-  position: relative;
-  margin: auto;
-  width: auto;
-}
-body#Productos > .gridproductos {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 8vh 12vh 7vh 40vh 50vh;
-  grid-gap: 2vh;
-}
-body#Productos > .gridproductos > .navbar {
+body#Productos > .flexproductos > .navbar {
   background-color: burlywood;
   display: flex;
   width: auto;
@@ -190,13 +116,13 @@ body#Productos > .gridproductos > .navbar {
   justify-content: end;
   font-style: none;
 }
-body#Productos > .gridproductos > .navbar > ul {
+body#Productos > .flexproductos > .navbar > ul {
   list-style-type: none;
   display: flex;
   margin: 0;
   padding: 0;
 }
-body#Productos > .gridproductos > .navbar > ul > li > a {
+body#Productos > .flexproductos > .navbar > ul > li > a {
   display: flex;
   text-decoration: none;
   color: black;
@@ -204,63 +130,32 @@ body#Productos > .gridproductos > .navbar > ul > li > a {
   padding: 13px;
   margin: 0%;
 }
-body#Productos > .gridproductos > .navbar > ul > li > a:hover {
+body#Productos > .flexproductos > .navbar > ul > li > a:hover {
   background: orangered;
   color: white;
 }
-body#Productos > .gridproductos > .hamnav {
-  width: auto;
-  height: 50px;
-  background: burlywood;
+body#Productos > .flexproductos > .hamnav {
   display: none;
 }
-body#Productos > .gridproductos > .hamnav > .hamburger {
-  position: fixed !important;
-  top: 17px;
-  left: 12px;
-  opacity: 0%;
-}
-body#Productos > .gridproductos > .hamnav > .hamburger > .hamitems {
-  display: flex;
-}
-body#Productos > .gridproductos > .hamnav > .hamburger > .hamitems > a {
-  flex-grow: 1;
-  flex-basis: 0;
-  padding: 10px;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-}
-body#Productos > .gridproductos > .hamnav > .hamburger > .hamitems a:hover {
-  background: #af0d0d;
-}
-body#Productos > .gridproductos > .tituloproductos {
+body#Productos > .flexproductos > .tituloproductos {
   display: flex;
   justify-content: center;
-  margin: auto;
+  margin: 5vh;
 }
-body#Productos > .gridproductos > .tituloproductos > .Titulo1 {
+body#Productos > .flexproductos > .tituloproductos > .Titulo1 {
   display: flex;
   border: 10px solid rgb(65, 40, 124);
-  border-width: 9px;
   background-color: rgb(171, 102, 250);
   border-radius: 10px;
   border-width: 10px;
   border-left: 30px solid blue;
   border-right: 30px solid blue;
   width: auto;
-  height: fit-content;
-  margin: auto;
 }
-body#Productos > .gridproductos > .tituloproductos > .Titulo1 > h1 {
-  font-size: 35px;
-  width: auto;
-}
-body#Productos > .gridproductos > .Subtitulo {
+body#Productos > .flexproductos > .Subtitulo {
   display: flex;
   justify-content: center;
   width: auto;
-  height: min-content;
   border: solid rgb(65, 40, 124);
   background-color: rgb(171, 102, 250);
   border-radius: 10px;
@@ -268,34 +163,35 @@ body#Productos > .gridproductos > .Subtitulo {
   width: fit-content;
   margin: auto;
 }
-body#Productos > .gridproductos > table {
+body#Productos > .flexproductos > table {
   display: flex;
   justify-content: center;
   width: auto;
   margin: auto;
   font-size: 20px;
+  padding: 5vh;
+}
+body#Productos > .flexproductos > table > tbody {
+  border: solid green;
   background-color: antiquewhite;
 }
-body#Productos > .gridproductos > table > tbody {
+body#Productos > .flexproductos > table > tbody > tr {
   border: solid green;
 }
-body#Productos > .gridproductos > table > tbody > tr {
-  border: solid green;
-}
-body#Productos > .gridproductos > table > tbody > tr > th {
+body#Productos > .flexproductos > table > tbody > tr > th {
   border: solid green;
   padding: 5px;
 }
-body#Productos > .gridproductos > table > tbody > tr > td {
+body#Productos > .flexproductos > table > tbody > tr > td {
   border: solid green;
   padding: 3px;
 }
-body#Productos > .gridproductos > .OtrosProductos > .TextOP {
+body#Productos > .flexproductos > .OtrosProductos > .TextOP {
   display: flex;
   justify-content: center;
   margin: auto;
 }
-body#Productos > .gridproductos > .OtrosProductos > .TextOP > h3 {
+body#Productos > .flexproductos > .OtrosProductos > .TextOP > h3 {
   width: min-content;
   font-size: 35px;
   border: 10px solid rgb(65, 40, 124);
@@ -306,82 +202,58 @@ body#Productos > .gridproductos > .OtrosProductos > .TextOP > h3 {
   text-align: center;
   margin: auto;
 }
-body#Productos > .gridproductos > .OtrosProductos > .cardsproductos {
+body#Productos > .flexproductos > .OtrosProductos > .cardsproductos {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   text-align: center;
-  margin: auto;
+  margin: 5vh;
   width: auto;
+  padding: 4vh;
 }
-body#Productos > .gridproductos > .OtrosProductos > .cardsproductos > .cardproductos {
+body#Productos > .flexproductos > .OtrosProductos > .cardsproductos .cardproductos:hover {
+  transform: scale(1.3);
+  transition: 0.5s;
+}
+body#Productos > .flexproductos > .OtrosProductos > .cardsproductos > .cardproductos {
   margin: 2vh;
   border: 12px solid rgb(181, 222, 135);
   background-color: antiquewhite;
 }
-body#Productos > .gridproductos > .OtrosProductos > .cardsproductos > .cardproductos > .Card-infoproductos > h4 {
+body#Productos > .flexproductos > .OtrosProductos > .cardsproductos > .cardproductos > .Card-infoproductos > h4 {
   font-size: 25px;
   border-radius: 5px;
   color: black;
   font-weight: 700;
 }
-body#Productos > .gridproductos > .OtrosProductos > .cardsproductos > .cardproductos > .Card-infoproductos > .btnProducts {
+body#Productos > .flexproductos > .OtrosProductos > .cardsproductos > .cardproductos > .Card-infoproductos > .btnProducts {
   font-size: 20px;
   border-radius: 5px;
   background-color: blue;
   color: white;
   text-decoration: none;
 }
-body#Productos > .gridproductos > .OtrosProductos > .cardsproductos > .cardproductos > .Card-infoproductos > .btnProducts:hover {
+body#Productos > .flexproductos > .OtrosProductos > .cardsproductos > .cardproductos > .Card-infoproductos > .btnProducts:hover {
   color: cyan;
 }
 
 body#SN {
-  background: url(/Assets/Img/istockphoto-1278990546-612x612.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-image: url(/Assets/Img/colorful-ice-cream-seamless-pattern-background-for-poster-print-cards-wrapping-paper-clothes-decoration-and-ice-cream-shop-vector.jpg);
 }
 body#SN footer {
-  border: 4px solid lightcoral;
+  border: 10px solid lightcoral;
   background-color: lightcoral;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: black;
   text-align: center;
 }
 body#SN footer > a {
   text-decoration: none;
 }
-body#SN footer > a > .mail {
-  position: relative;
+body#SN > .flexsobrenosotros {
+  display: flex;
+  flex-direction: column;
   margin: auto;
-  width: auto;
+  padding: auto;
 }
-body#SN footer > a > .IG {
-  position: relative;
-  margin: auto;
-  width: auto;
-}
-body#SN footer > a > .WSP {
-  position: relative;
-  margin: auto;
-  width: auto;
-}
-body#SN footer > a > .fd {
-  position: relative;
-  margin: auto;
-  width: auto;
-}
-body#SN > .gridsobrenosotros {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 7vh 60vh 7vh 40vh 85vh;
-}
-body#SN > .gridsobrenosotros > .navbar {
+body#SN > .flexsobrenosotros > .navbar {
   background-color: burlywood;
   display: flex;
   width: auto;
@@ -389,13 +261,13 @@ body#SN > .gridsobrenosotros > .navbar {
   justify-content: end;
   font-style: none;
 }
-body#SN > .gridsobrenosotros > .navbar > ul {
+body#SN > .flexsobrenosotros > .navbar > ul {
   list-style-type: none;
   display: flex;
   margin: 0;
   padding: 0;
 }
-body#SN > .gridsobrenosotros > .navbar > ul > li > a {
+body#SN > .flexsobrenosotros > .navbar > ul > li > a {
   display: flex;
   text-decoration: none;
   color: black;
@@ -403,56 +275,34 @@ body#SN > .gridsobrenosotros > .navbar > ul > li > a {
   padding: 13px;
   margin: 0%;
 }
-body#SN > .gridsobrenosotros > .navbar > ul > li > a:hover {
+body#SN > .flexsobrenosotros > .navbar > ul > li > a:hover {
   background: orangered;
   color: white;
 }
-body#SN > .gridsobrenosotros > .hamnav {
-  width: auto;
-  height: 50px;
-  background: burlywood;
+body#SN > .flexsobrenosotros > .hamnav {
   display: none;
 }
-body#SN > .gridsobrenosotros > .hamnav > .hamburger {
-  position: fixed;
-  top: 17px;
-  left: 12px;
-  opacity: 0%;
-}
-body#SN > .gridsobrenosotros > .hamnav > .hamburger > .hamitems {
-  display: flex;
-}
-body#SN > .gridsobrenosotros > .hamnav > .hamburger > .hamitems > a {
-  flex-grow: 1;
-  flex-basis: 0;
-  padding: 10px;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-}
-body#SN > .gridsobrenosotros > .hamnav > .hamburger > .hamitems a:hover {
-  background: #af0d0d;
-}
-body#SN > .gridsobrenosotros > .PosicionTSN {
+body#SN > .flexsobrenosotros > .PosicionTSN {
   display: flex;
   align-items: center;
   justify-content: center;
   width: auto;
+  margin: 40px;
 }
-body#SN > .gridsobrenosotros > .PosicionTSN > .headerSN {
+body#SN > .flexsobrenosotros > .PosicionTSN > .headerSN {
   width: auto;
   border: solid 10px;
   border-style: dotted;
   border-width: 10px;
-  margin: auto;
+  margin: 20px;
 }
-body#SN > .gridsobrenosotros > .TtleSN {
+body#SN > .flexsobrenosotros > .TtleSN {
   display: flex;
   justify-content: center;
   width: auto;
-  margin: auto;
+  margin: 40px;
 }
-body#SN > .gridsobrenosotros > .TtleSN > h1 {
+body#SN > .flexsobrenosotros > .TtleSN > h1 {
   border: 10px solid rgb(255, 255, 255);
   background-color: rgb(190, 176, 113);
   border-radius: 10px;
@@ -460,81 +310,45 @@ body#SN > .gridsobrenosotros > .TtleSN > h1 {
   border-right: 30px solid rgb(0, 0, 0);
   font-size: 50px;
 }
-body#SN > .gridsobrenosotros > .PositionTextSN {
+body#SN > .flexsobrenosotros > .PositionTextSN {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: auto;
-  width: auto;
-  height: auto;
+  margin: 60px;
   border: 10px solid rgb(0, 0, 0);
   background-color: whitesmoke;
 }
-body#SN > .gridsobrenosotros > .PositionTextSN > div > p {
+body#SN > .flexsobrenosotros > .PositionTextSN > div > p {
+  font-size: 20px;
   width: auto;
-  font-size: 22px;
 }
-body#SN > .gridsobrenosotros > .positionpic {
+body#SN > .flexsobrenosotros > .positionpic {
+  display: flex;
+  justify-content: center;
+  margin: 60px;
+}
+body#SN > .flexsobrenosotros > .positionpic > .pic {
   display: flex;
   justify-content: center;
   margin: auto;
-  width: auto;
-  height: auto;
-}
-body#SN > .gridsobrenosotros > .positionpic > .pic {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  width: auto;
-  height: auto;
 }
 
 body#Ubicacion {
-  background: url(/Assets/Img/colorful-ice-cream-seamless-pattern-background-for-poster-print-cards-wrapping-paper-clothes-decoration-and-ice-cream-shop-vector.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url(/Assets/Img/colorful-ice-cream-seamless-pattern-background-for-poster-print-cards-wrapping-paper-clothes-decoration-and-ice-cream-shop-vector.jpg);
 }
 body#Ubicacion footer {
-  border: 4px solid lightcoral;
+  border: 10px solid lightcoral;
   background-color: lightcoral;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: black;
   text-align: center;
 }
 body#Ubicacion footer > a {
   text-decoration: none;
 }
-body#Ubicacion footer > a > .mail {
-  position: relative;
-  margin: auto;
-  width: auto;
+body#Ubicacion > .flexubicacion {
+  display: flex;
+  flex-direction: column;
 }
-body#Ubicacion footer > a > .IG {
-  position: relative;
-  margin: auto;
-  width: auto;
-}
-body#Ubicacion footer > a > .WSP {
-  position: relative;
-  margin: auto;
-  width: auto;
-}
-body#Ubicacion footer > a > .fd {
-  position: relative;
-  margin: auto;
-  width: auto;
-}
-body#Ubicacion > .gridubicacion {
-  display: grid !important;
-  grid-template-columns: 100%;
-  grid-template-rows: 8vh 8vh 50vh 17vh;
-}
-body#Ubicacion > .gridubicacion > .navbar {
+body#Ubicacion > .flexubicacion > .navbar {
   background-color: burlywood;
   display: flex;
   width: auto;
@@ -542,13 +356,13 @@ body#Ubicacion > .gridubicacion > .navbar {
   justify-content: end;
   font-style: none;
 }
-body#Ubicacion > .gridubicacion > .navbar > ul {
+body#Ubicacion > .flexubicacion > .navbar > ul {
   list-style-type: none;
   display: flex;
   margin: 0;
   padding: 0;
 }
-body#Ubicacion > .gridubicacion > .navbar > ul > li > a {
+body#Ubicacion > .flexubicacion > .navbar > ul > li > a {
   display: flex;
   text-decoration: none;
   color: black;
@@ -556,135 +370,68 @@ body#Ubicacion > .gridubicacion > .navbar > ul > li > a {
   padding: 13px;
   margin: 0%;
 }
-body#Ubicacion > .gridubicacion > .navbar > ul > li > a:hover {
+body#Ubicacion > .flexubicacion > .navbar > ul > li > a:hover {
   background: orangered;
   color: white;
 }
-body#Ubicacion > .gridubicacion > .hamnav {
-  width: auto;
-  height: 50px;
-  background: burlywood;
+body#Ubicacion > .flexubicacion > .hamnav {
   display: none;
 }
-body#Ubicacion > .gridubicacion > .hamnav > .hamburger {
-  position: fixed;
-  top: 17px;
-  left: 12px;
-  opacity: 0%;
-}
-body#Ubicacion > .gridubicacion > .hamnav > .hamburger > .hamitems {
-  display: flex;
-}
-body#Ubicacion > .gridubicacion > .hamnav > .hamburger > .hamitems > a {
-  flex-grow: 1;
-  flex-basis: 0;
-  padding: 10px;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-}
-body#Ubicacion > .gridubicacion > .hamnav > .hamburger > .hamitems a:hover {
-  background: #af0d0d;
-}
-body#Ubicacion > .gridubicacion > .PosicionTtleUbicacion {
+body#Ubicacion > .flexubicacion > .PosicionTtleUbicacion {
   display: flex;
   justify-content: center;
-  margin: auto;
-  width: auto;
-  height: auto;
-  padding: auto;
+  margin: 50px;
 }
-body#Ubicacion > .gridubicacion > .PosicionTtleUbicacion > .TtleUbic > strong {
-  width: auto;
-  margin: auto;
+body#Ubicacion > .flexubicacion > .PosicionTtleUbicacion > .TtleUbic > strong {
   background-color: rgb(219, 52, 52);
   border-radius: 15px;
   border-width: 20px;
   border: solid 5px rgb(255, 137, 2);
   font-size: 30px;
 }
-body#Ubicacion > .gridubicacion > .ContainerMap {
+body#Ubicacion > .flexubicacion > .ContainerMap {
   display: flex;
   justify-content: center;
-  width: auto;
-  margin: auto;
 }
-body#Ubicacion > .gridubicacion > .ContainerMap > .map {
-  border: solid 10px green !important;
-}
-body#Ubicacion > .gridubicacion > .TextUbic {
+body#Ubicacion > .flexubicacion > .TextUbic {
   display: flex;
-  width: fit-content;
-  margin: auto;
-  height: auto;
+  margin: 50px;
 }
-body#Ubicacion > .gridubicacion > .TextUbic > b {
+body#Ubicacion > .flexubicacion > .TextUbic > b {
   background-color: rgb(216, 101, 197);
   border: solid 5px rgb(105, 34, 105);
   border-radius: 15px;
   border-width: 6px;
-  font-size: 21px;
+  font-size: 20px;
   margin: auto;
-  height: auto;
-  width: auto;
 }
-body#Ubicacion > .gridubicacion > .posicionbtnubic {
-  display: flex !important;
-  justify-items: center !important;
-  margin: auto !important;
+body#Ubicacion > .flexubicacion > .posicionbtnubic {
+  display: flex;
+  justify-content: center;
+  margin: 56.3px;
 }
-body#Ubicacion > .gridubicacion > .posicionbtnubic > .btnUbicStyle {
+body#Ubicacion > .flexubicacion > .posicionbtnubic > .btnUbicStyle {
   background-color: blue;
   border-radius: 5px;
   color: white;
 }
 
 body#Contactarse {
-  background: url(/Assets/Img/colorful-ice-cream-seamless-pattern-background-for-poster-print-cards-wrapping-paper-clothes-decoration-and-ice-cream-shop-vector.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url(/Assets/Img/colorful-ice-cream-seamless-pattern-background-for-poster-print-cards-wrapping-paper-clothes-decoration-and-ice-cream-shop-vector.jpg);
 }
-body#Contactarse > footer {
-  border: 4px solid lightcoral;
+body#Contactarse footer {
+  border: 10px solid lightcoral;
   background-color: lightcoral;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: black;
   text-align: center;
 }
-body#Contactarse > footer > a {
+body#Contactarse footer > a {
   text-decoration: none;
 }
-body#Contactarse > footer > a > .mail {
-  position: relative;
-  margin: auto;
-  width: auto;
+body#Contactarse > .flexcontactarse {
+  display: flex;
+  flex-direction: column;
 }
-body#Contactarse > footer > a > .IG {
-  position: relative;
-  margin: auto;
-  width: auto;
-}
-body#Contactarse > footer > a > .WSP {
-  position: relative;
-  margin: auto;
-  width: auto;
-}
-body#Contactarse > footer > a > .fd {
-  position: relative;
-  margin: auto;
-  width: auto;
-}
-body#Contactarse > .gridcontactarse {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 6vh 14vh 65vh 13vh;
-}
-body#Contactarse > .gridcontactarse > .navbar {
+body#Contactarse > .flexcontactarse > .navbar {
   background-color: burlywood;
   display: flex;
   width: auto;
@@ -692,13 +439,13 @@ body#Contactarse > .gridcontactarse > .navbar {
   justify-content: end;
   font-style: none;
 }
-body#Contactarse > .gridcontactarse > .navbar > ul {
+body#Contactarse > .flexcontactarse > .navbar > ul {
   list-style-type: none;
   display: flex;
   margin: 0;
   padding: 0;
 }
-body#Contactarse > .gridcontactarse > .navbar > ul > li > a {
+body#Contactarse > .flexcontactarse > .navbar > ul > li > a {
   display: flex;
   text-decoration: none;
   color: black;
@@ -706,83 +453,51 @@ body#Contactarse > .gridcontactarse > .navbar > ul > li > a {
   padding: 13px;
   margin: 0%;
 }
-body#Contactarse > .gridcontactarse > .navbar > ul > li > a:hover {
+body#Contactarse > .flexcontactarse > .navbar > ul > li > a:hover {
   background: orangered;
   color: white;
 }
-body#Contactarse > .gridcontactarse > .hamnav {
-  width: auto;
-  height: 50px;
-  background: burlywood;
+body#Contactarse > .flexcontactarse > .hamnav {
   display: none;
 }
-body#Contactarse > .gridcontactarse > .hamnav > label {
-  margin: auto !important;
-  width: auto !important;
-  height: auto !important;
-}
-body#Contactarse > .gridcontactarse > .hamnav > .hamburger {
-  position: fixed;
-  top: 17px;
-  left: 12px;
-  opacity: 0%;
-}
-body#Contactarse > .gridcontactarse > .hamnav > .hamburger > .hamitems {
-  display: flex;
-}
-body#Contactarse > .gridcontactarse > .hamnav > .hamburger > .hamitems > a {
-  flex-grow: 1;
-  flex-basis: 0;
-  padding: 10px;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-}
-body#Contactarse > .gridcontactarse > .hamnav > .hamburger > .hamitems a:hover {
-  background: #af0d0d;
-}
-body#Contactarse > .gridcontactarse > .PosicionHContacto {
+body#Contactarse > .flexcontactarse > .PosicionHContacto {
   display: flex;
   justify-content: center;
-  margin: auto;
-  width: auto;
+  margin: 40px;
 }
-body#Contactarse > .gridcontactarse > .PosicionHContacto > .headercontactarse {
+body#Contactarse > .flexcontactarse > .PosicionHContacto > .headercontactarse {
   border-style: ridge;
   width: fit-content;
   background-color: rgb(165, 106, 28);
   border-radius: 15px;
   border-width: 20px;
 }
-body#Contactarse > .gridcontactarse .containerformcontc {
+body#Contactarse > .flexcontactarse .containerformcontc {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 24vh;
 }
-body#Contactarse > .gridcontactarse .containerformcontc > form {
+body#Contactarse > .flexcontactarse .containerformcontc > form {
   color: rgb(219, 29, 29);
   border: solid 20px rgb(250, 182, 119);
   background-color: rgb(255, 192, 119);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: auto;
   height: max-content;
   padding: 6vh;
-  margin: auto;
 }
-body#Contactarse > .gridcontactarse .containerformcontc > form > input, body#Contactarse > .gridcontactarse .containerformcontc > form textarea {
+body#Contactarse > .flexcontactarse .containerformcontc > form > input, body#Contactarse > .flexcontactarse .containerformcontc > form textarea {
   width: max-content;
   height: max-content;
   padding: 15px;
   margin: 10px;
 }
-body#Contactarse > .gridcontactarse .containerformcontc > form > textarea {
-  width: auto !important;
+body#Contactarse > .flexcontactarse .containerformcontc > form > textarea {
+  width: auto;
 }
-body#Contactarse > .gridcontactarse .containerformcontc > form > .btncontactarse {
+body#Contactarse > .flexcontactarse .containerformcontc > form > .btncontactarse {
   display: block;
   width: auto;
   text-align: center;
@@ -794,240 +509,156 @@ body#Contactarse > .gridcontactarse .containerformcontc > form > .btncontactarse
   background-color: rgb(125, 125, 168);
   color: white;
 }
-body#Contactarse > .gridcontactarse .PosicionPContacto {
+body#Contactarse > .flexcontactarse .PosicionPContacto {
   display: flex;
   justify-content: center;
   margin: auto;
   width: 50vh;
 }
-body#Contactarse > .gridcontactarse .PosicionPContacto > .textcontactarse {
+body#Contactarse > .flexcontactarse .PosicionPContacto > .textcontactarse {
   background-color: aliceblue;
   border: 1px solid black;
   font-size: 20px;
+  margin: 10px;
 }
 
 @media only screen and (max-width: 500px) {
-  .gridinicio {
-    grid-template-columns: 100% !important;
-    grid-template-rows: 15vh 10vh 140vh !important;
-  }
   .navbar {
     display: none !important;
   }
   .hamnav {
+    width: 100%;
+    height: 38%;
+    background: burlywood;
     display: inline-block !important;
   }
-  .hamitems a {
-    box-sizing: border-box !important;
-    display: block !important;
-    width: auto !important;
-    border: 4px solid black !important;
-  }
-  .hamnav label {
-    color: white !important;
-    background: #a02620 !important;
-    font-style: normal !important;
-    padding: 13px !important;
-    height: 100% !important;
+  .hamburger {
+    position: fixed;
+    top: 17px;
+    left: 12px;
+    opacity: 0%;
   }
   .hamitems {
-    position: fixed !important;
-    background-color: burlywood !important;
-    text-decoration: none !important;
-  }
-  .hamitems a {
-    border: solid black !important;
-    width: auto !important;
-    text-decoration: none !important;
-    color: black !important;
-    text-align: center !important;
+    display: none;
+    position: fixed;
+    background-color: burlywood;
   }
   .hamitems a:hover {
-    background: orangered !important;
-    color: white !important;
+    background: #af0d0d;
   }
-  .hamitems {
-    display: none !important;
+  .hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: auto;
+    border: 3px solid black;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+  }
+  .hamnav label {
+    background: #a02620;
+    padding: 13px;
+  }
+  .hamitems a:hover {
+    background: orangered;
+    color: white;
   }
   .hamnav input:checked ~ .hamitems {
-    display: block !important;
+    display: block;
   }
   #TitleInicio h1 {
-    font-size: 25px !important;
+    font-size: 23.6px;
   }
-  .containercards {
-    width: auto !important;
-    display: flex !important;
-    flex-direction: column !important;
+  .containercards1, .containercards2 {
+    width: auto;
+    display: flex;
+    flex-direction: column;
   }
   #cardssection {
-    flex-direction: column !important;
-    margin: auto !important;
-    width: auto !important;
-    height: auto !important;
+    flex-direction: column;
+    margin: auto;
+    width: auto;
+    height: auto;
   }
   .cardinicio img {
-    width: 35vh !important;
-    height: 25vh !important;
-    margin: auto !important;
+    width: 35vh;
+    height: 25vh;
+    margin: auto;
   }
   .Cardinicio-info {
     width: fit-content;
-    margin: auto !important;
+    margin: auto;
   }
   .Cardinicio-info h2 {
-    font-size: 18px !important;
-    margin: auto !important;
+    font-size: 18px;
+    margin: auto;
   }
   .Titulo1 h1 {
-    font-size: 32px !important;
-  }
-  .gridproductos {
-    grid-template-columns: 100% !important;
-    grid-template-rows: 8vh 15vh 10vh 45vh 280vh !important;
+    font-size: 32px;
   }
   .tituloproductos {
-    margin: auto !important;
-    width: fit-content !important;
+    margin: auto;
+    width: fit-content;
   }
   .Titulo1 h1 {
-    font-size: 30px !important;
+    font-size: 27px;
   }
   .Subtitulo h2 {
-    font-size: 24px !important;
+    font-size: 24px;
   }
-  .Sabores {
-    width: fit-content !important;
-    height: fit-content !important;
-    font-size: 12px !important;
-    margin: fit-content !important;
-  }
-  .Sabores th {
-    padding: 0 !important;
-  }
-  .Sabores td {
-    font-size: 14px !important;
-    height: 8vh !important;
-    width: min-content !important;
-    height: min-content !important;
+  .Sabores th, td {
+    font-size: 11px;
+    height: 8.5vh;
   }
   .OtrosProductos h3 {
-    font-size: 21px !important;
-    width: 20vh !important;
-    margin-top: 10vh !important;
-    font-weight: 700 !important;
+    font-size: 21px;
+    width: 20vh;
+    margin-top: 10vh;
+    font-weight: 700;
   }
   .cardproductos img {
-    width: 43.2vh !important;
-    height: 20vh !important;
+    width: 39.1vh;
+    height: 20vh;
   }
   .cardsproductos {
-    display: flex !important;
-    flex-direction: column !important;
-    margin: 5vh !important;
-    width: min-content !important;
-    height: min-content !important;
-  }
-  .cardproductos img {
-    width: 41.2vh !important;
-  }
-  .gridsobrenosotros {
-    grid-template-rows: 7vh 40vh 20vh 90vh 65vh !important;
+    display: flex;
+    flex-direction: column;
+    margin: 5vh;
+    width: min-content;
+    height: min-content;
   }
   .Gif {
-    width: 400px !important;
-    height: 300px !important;
+    width: 400px;
+    height: 300px;
   }
   .PositionTextSN {
-    max-width: 55vh !important;
+    width: 45vh;
   }
   .pic {
-    display: flex !important;
-    justify-content: center !important;
-    margin: auto !important;
-    width: 55vh !important;
-    height: 40vh !important;
+    width: 55vh;
+    height: 40vh;
   }
   .PosicionTtleUbicacion {
-    margin: 20px !important;
+    margin: 20px;
   }
   .ContainerMap {
-    margin: 10px !important;
-  }
-  .gridubicacion {
-    grid-template-rows: 8vh 8vh 55vh 17vh !important;
-    grid-gap: 1vh !important;
-  }
-  .cardproductos:hover {
-    transform: scale(1.2) !important;
-    transition: 0.5s !important;
-  }
-  .gridcontactarse {
-    grid-template-columns: 100% !important;
-    grid-template-rows: 5vh 20vh 70vh 30vh !important;
+    margin: 10px;
   }
   .textcontactarse {
-    width: 50vh !important;
-    font-size: 24px !important;
-    margin: auto !important;
+    width: 50vh;
+    font-size: 24px;
+    margin: auto;
   }
   .PosicionHContacto {
-    width: auto !important;
-    font-size: 12px !important;
+    width: auto;
+    font-size: 12px;
   }
   .headercontactarse h1 {
-    font-size: 25px !important;
+    font-size: 21.9px;
   }
   .containerformcontc {
-    width: auto !important;
-    margin: auto !important;
-    height: auto !important;
+    width: auto;
+    margin: auto;
+    height: auto;
   }
-  .cardinicio:hover {
-    transform: scale(1.1) !important;
-    transition: 0.5s !important;
-  }
-  @keyframes gradient {
-    0% {
-      background-position: 0% 0%;
-    }
-    50% {
-      background-position: 100% 100%;
-    }
-    100% {
-      background-position: 0% 0%;
-    }
-  }
-}
-body {
-  margin: auto;
-  overflow: auto;
-  animation: gradient infinite 25s ease;
-  background-attachment: fixed;
-}
-
-body#Inicio {
-  margin: auto;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  overflow: auto;
-  animation: gradient infinite 25s ease;
-  background-attachment: fixed;
-}
-
-body#Productos {
-  margin: auto;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  overflow: auto;
-  animation: gradient infinite 25s ease;
-  background-attachment: fixed;
-}
-
-.cardinicio:hover, .Cardinicio-info:hover {
-  transform: scale(1.3);
-  transition: 0.5s;
-}
-
-.cardproductos:hover {
-  transform: scale(1.3);
-  transition: 0.5s;
 }
